@@ -210,19 +210,20 @@
                 <h3 class="text-center font-semibold text-lg">Budget</h3>
                 <div class="grid grid-cols-3 my-5">
                   <label
-                    for="visitors"
+                    for="perplayer-field"
                     class="text-sm flex items-center text-zinc-400"
                     >Per Player
                   </label>
                   <input
                     type="number"
-                    id="visitors"
+                    id="perplayer-field"
                     class="col-span-2 bg-black border border-white py-2 px-2 w-4/5 ml-auto"
                     required
                   />
                 </div>
                 <button
-                  class="w-full btn bg-cyan-700 rounded-none text-white px-5 block mb-7"
+                  id="btn-caculate"
+                  class="w-full btn bg-cyan-700 rounded-none hover:bg-cyan-500 text-white px-5 block mb-7"
                 >
                   Calculate
                 </button>
@@ -231,37 +232,37 @@
                   <span class="mr-3 text-zinc-400 text-sm"
                     >Player Expenses</span
                   >
-                  $<span>0000</span>
+                  $<span id="player-expenses-field">0000</span>
                 </h4>
 
                 <div class="grid grid-cols-3 my-5">
                   <label
-                    for="visitors"
+                    for="manager-field"
                     class="text-sm flex items-center text-zinc-400"
                     >Manager
                   </label>
                   <input
                     type="number"
-                    id="visitors"
+                    id="manager-field"
                     class="col-span-2 bg-black border border-white py-2 px-2 w-4/5 ml-auto"
                     required
                   />
                 </div>
                 <div class="grid grid-cols-3 my-5">
                   <label
-                    for="visitors"
+                    for="coach-field"
                     class="text-sm flex items-center text-zinc-400"
                     >Coach
                   </label>
                   <input
                     type="number"
-                    id="visitors"
+                    id="coach-field"
                     class="col-span-2 bg-black border border-white py-2 px-2 w-4/5 ml-auto"
                     required
                   />
                 </div>
                 <button
-                  class="w-full btn bg-cyan-700 rounded-none text-white px-5 block mb-7"
+                  class="w-full btn bg-cyan-700 hover:bg-cyan-500 rounded-none text-white px-5 block mb-7"
                 >
                   Calculate Total
                 </button>

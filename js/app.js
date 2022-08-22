@@ -25,3 +25,13 @@ function displayName(element) {
   }
   addNames();
 }
+document.getElementById("btn-caculate").addEventListener("click", function () {
+  const perPlayerAmount = getInputValue("perplayer-field");
+
+  const playerList = document.getElementById("player-list");
+  const playerLength = playerList.children.length;
+  // total player expenses
+  const playerExpenses = perPlayerAmount * playerLength;
+
+  setTotalExpeses("player-expenses-field", playerExpenses);
+});
