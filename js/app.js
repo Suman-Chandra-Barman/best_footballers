@@ -1,0 +1,27 @@
+function displayName(element) {
+  // get select five player name
+  const playerName = element.parentNode.parentNode.children[0].innerText;
+
+  // after clicked button disable
+  element.disabled = true;
+
+  const playerNameList = document.getElementById("player-list");
+  const li = document.createElement("li");
+  li.innerHTML = `
+      <span class="font-bold text-zinc-400">${
+        playerNameList.children.length + 1
+      }</span>.
+      <span class="ml-1 text-slate-300">${playerName}</span>
+   `;
+
+  function addNames() {
+    let length = playerNameList.children.length;
+    if (length < 4) {
+      playerNameList.appendChild(li);
+    } else if (length === 4) {
+      playerNameList.appendChild(li);
+      alert("Your can add more than five players!");
+    }
+  }
+  addNames();
+}
